@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Basic Electronics </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(./Images/mt7.jpg);
+			}
+    
+            
+		</style>
+		
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+	
+		<!-- Navigation Bar -->
+
+		<div id="nav">
+			<nav>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Units
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="html-css.html">Web Development</a>
+                        <a href="basic_electronics.html">Basic Electronics</a>
+                        <a style="color:#37a5f0;">JavaScript</a>
+                        <a href="digital_electronics.html">Digital Electronics</a>
+                        <a href="culmanating_activity.html">Culminating Activity</a>
+                    </div>
+                    </div>
+				<a href="career.html">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a href="about.html">About</a> 
+				<a href="index.html">Home</a>
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+        </div>
+        
+         <!--DropDown-->
+		<script>
+            // DropDown Apprear and Disappear on Click
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Disapear if Clicked outside of 
+            window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+            }
+        </script>
+		
+    
+        <div id="body">
+    
+        <h1>JavaScript</h1>
+
+        <h2>Introduction</h2>
+        <p>JavaScritp: An object oriented programming language used to create interactive elements of a website. In this unit, we had to learn JavaScrit from CodeCademy. The problem with this was that CodeCademy did not explain how to use JavaScipt in a website to do funtions like a drop down, map, etc. very well. Therefore, many people were forced to reference <a href="https://www.w3schools.com/">W3Schools</a> for information.</p>
+
+        <br>
+
+        <p>In this website you will find 3 instances of it being used to help you, the user, interact.</p>
+
+        <h2>DropDown</h2>
+        <p>When you click on the unit tab on the navigation bar, a dropdown menu apprears. This was programmed in JavaScript.<br>Here is the code for it.</p>
+        <xmp style="color:#37a5f0; font-size: 15px;">
+            
+            <!-- Reference to Function in Navigation Bar -->
+            
+            <div id="nav">
+                    <nav>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()">Units
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="html-css.html">Web Development</a>
+                                <a href="basic_electronics.html">Basic Electronics</a>
+                                <a style="color:rgb(20, 129, 252);">JavaScript</a>
+                                <a href="digital_electronics.html">Digital Electronics</a>
+                                <a href="culmanating_activity">Culminating Activity</a>
+                            </div>
+                        </div>
+                        <a href="career.html">Career</a> 
+                        <a href="contact.html">Contact</a> 
+                        <a href="about.html">About</a> 
+                        <a href="index.html">Home</a>    
+                        <div id="webname">
+                            <a>Patelium: The Official Webpage of Vraj Patel</a>
+                        </div>
+                    </nav>
+                </div>
+            
+            
+            
+            <!-- JavaScript Code -->
+            
+            <script>
+                // DropDown Apprear and Disappear on Click
+                function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+                }
+    
+                // Disapear if Clicked outside of 
+                window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                    }
+                }
+                }
+            </script>
+        </xmp>
+
+        <br>
+
+        <!--Google Maps-->
+        <h2>Google Maps</h2>
+        <p>If you go to the contact section of this website, you will see an interactive google maps. This was also programmed in JavaScript. Thid was actually harder to do than the drowdown as it is and Application Programming Interface produced by Google, and it needed a special code which goes in the link url, for the map to even work. Also, inorder to target Stephen Lewis Secondary School, the exact coordinated had to be entered.<br>None the less, here is the code for it.</p>
+        <xmp style="color:#37a5f0; font-size: 12.5px;">
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+
+            <script>
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(43.556912, -79.743678),
+                        zoom:15,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCeq4r8IQwVbbGANfsSwVn_ywtFbvflzK8&callback=myMap"></script>
+            
+            </div>
+        </xmp>
+
+        <br>
+
+        <h2>Windows Alert</h2>
+        <p>This is the easiest implementation of JavaScript. You can find it in the contact page again, it's the submit button! All this Function does is when the user clicks the subit button, a Windows alert pops up telling the user to click ok.<br>Here is the code for it.</p>
+        <xmp style="color:#37a5f0; font-size: 15px;">
+            <!-- Windows Alert and Submition -->	
+            <button onclick="Thanks()" style="color:#37a5f0">Submit</button>
+
+            <script>
+            function Thanks() {
+            alert("Click Ok to proceed");
+            }
+            </script>
+        </xmp>
+
+    </body>

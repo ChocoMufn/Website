@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Basic Electronics </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(./Images/mt8.jpg);
+			}
+    
+            
+		</style>
+		
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+	
+		<!-- Navigation Bar -->
+
+		<div id="nav">
+			<nav>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Units
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="html-css.html">Web Development</a>
+                        <a href="basic_electronics.html">Basic Electronics</a>
+                        <a href="javascript.html">JavaScript</a>
+                        <a style="color:#37a5f0;">Digital Electronics</a>
+                        <a href="culmanating_activity.html">Culminating Activity</a>
+                    </div>
+                    </div>
+				<a href="career.html">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a href="about.html">About</a> 
+				<a href="index.html">Home</a>
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+		</div>
+		
+        <!--DropDown-->
+		<script>
+            // DropDown Apprear and Disappear on Click
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Disapear if Clicked outside of 
+            window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+            }
+        </script>
+
+        <div id="body">
+        <h1>Digital Electonics</h1>
+        
+        <h2>What is it?</h2>
+        <p>Unlike Basic Electronics, which involved circuits and how electrical energy is passed on, digital electronics talks about how computers work. We had two topics that we covered in this unit, number conversions and logic gates.</p>
+
+        <h2>Conversions</h2>
+        <h4>Place Value Charts</h4>
+        
+        <h3>Decimal</h3>
+        <table>
+            <thead>
+                <th>10^4</th>
+                <th>10^3</th>
+                <th>10^2</th>
+                <th>10^1</th>
+                <th>10^0</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10000</td>
+                    <td>1000</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Binary</h3>
+        <table>
+            <thead>
+                <th>2^4</th>
+                <th>2^3</th>
+                <th>2^2</th>
+                <th>2^1</th>
+                <th>2^0</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>16</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Octal</h3>
+        <table>
+            <thead>
+                <th>8^4</th>
+                <th>8^3</th>
+                <th>8^2</th>
+                <th>8^1</th>
+                <th>8^0</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4096</td>
+                    <td>512</td>
+                    <td>64</td>
+                    <td>8</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Hexa-Decimal</h3>
+        <table>
+            <thead>
+                <th>16^4</th>
+                <th>16^3</th>
+                <th>16^2</th>
+                <th>16^1</th>
+                <th>16^0</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>65536</td>
+                    <td>4096</td>
+                    <td>256</td>
+                    <td>16</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <h4>Decimal to Other Counting Systems and Back</h4>
+        <iframe src="https://onedrive.live.com/embed?cid=6294D64335C7BE1C&amp;resid=6294D64335C7BE1C%211731&amp;authkey=AOt6f9jdtGzEnEc&amp;em=2&amp;wdAr=1.7777777777777776" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+        
+        <h4>Binary to Hexa-Decimal and Back</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jFnXpMt6H_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table>
+            <thead>
+                <th>Binary</th>
+                <th>Hexa-Decimal</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0000</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0010</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>0011</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>0100</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>0101</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>0110</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>0111</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>1001</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>1010</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>1011</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>1100</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>1101</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>1110</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>1111</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Ninary to Octal and Back</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bmgZf4VMhHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <table>
+            <thead>
+                <th>Binary</th>
+                <th>Octal</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>000</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>010</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>011</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Logic Gates</h2>
+        <p>Logic Gates are ciruit components that process inputs to produce an output based on the gate being used.</p>
+        <img width="600px" height="225px" src="./Images/logicgates.png" alt="Image not available" >
+        <h4>Gates</h4>
+        <p>There are 7 basic gates.</p>
+        
+        <br>
+        <h3>AND</h3>
+        <img width="120px" height="100px" src="./Images/AND.png" alt="Image not available" >
+        <p>Boolean Equation: X=AB</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        <br>
+        <h3>NAND</h3>
+        <img width="120px" height="100px" src="./Images/AND.png" alt="Image not available" >
+        <p>Boolean Equation: X=(AB)'</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <br>
+        <h3>OR</h3>
+        <img width="120px" height="100px" src="./Images/OR.png" alt="Image not available" >
+        <p>Boolean Equation: X=A+B</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <br>
+        <h3>NOR</h3>
+        <img width="120px" height="100px" src="./Images/NOR.png" alt="Image not available" >
+        <p>Boolean Equation: X=(A+B)'</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <br>
+        <h3>NOT</h3>
+        <img width="120px" height="100px" src="./Images/NOT.png" alt="Image not available" >
+        <p>Boolean Equation: X=A'</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <br>   
+        <h3>XOR</h3>
+        <img width="120px" height="100px" src="./Images/XOR.png" alt="Image not available" >
+        <p>Boolean Equation: X=A⊕B</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <br>
+        <h3>XNOR</h3>
+        <img width="120px" height="100px" src="./Images/XNOR.png" alt="Image not available" >
+        <p>Boolean Equation: X=(A⊕B)'</p>
+        <table>
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>X</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        <h4>Karnaugh Map</h4>
+        <p>Karnaugh Maps or K Maps are a very useful tool to simplify truth table data into a boolean expression. It is too hard to explain how they work in words so enjoy this video I made. I appologise if it is too quite, as My family was sleeping.</p>
+        <video width="315" height="520" controls>
+            <source src="Videos/KMaps.mp4" type="video/mp4">
+            Sorry, video is unavailable. :(
+        </video>
+    </body>

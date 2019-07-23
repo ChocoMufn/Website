@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<!-- 22 Vraj Patel: Website (HTML and CSS) -->
+
+
+<html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Web Develeopment Course </title>
+
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(Images/mt5.jpg);
+			}
+		
+		</style>
+		
+		<!-- Inserting the Favicon -->
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+		<!-- Navigation -->
+		<div id="nav">
+			<nav>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Units
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a style="color:#37a5f0;">Web Development</a>
+						<a href="basic_electronics.html">Basic Electronics</a>
+						<a href="javascript.html">JavaScript</a>
+						<a href="digital_electronics.html">Digital Electronics</a>
+                        <a href="culmanating_activity.html">Culminating Activity</a>
+					</div>
+				</div>
+				<a href="career.html">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a href="about.html">About</a> 
+				<a href="index.html">Home</a>    
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+		</div>
+		
+
+		<script>
+			// DropDown Apprear and Disappear on Click
+			function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Disapear if Clicked outside of 
+			window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+				}
+			}
+			}
+		</script>
+
+		<!-- Putting the content in a section of it's own -->
+		<div id="body">
+		
+		<!-- Main Heading -->
+		<h1>Web Development Unit</h1>
+		
+		<!-- What is web dev all about -->
+		<h2>What is Web Development</h2>
+		
+		<div class="ind">
+			<p>Web development is the work involved in developing the front end and back end of a web site. This is usually done for a client who hired a web developer to make a website, social media service, corporate data base or application for them.</p>
+		</div>
+	
+		<div class="ind">
+			<p>Web development includes both front-end programming and back-end programming. Front-end programming, also known as the client side, is what a person who visits the cite sees. This includes using the languages HTML (markup language), CSS (style sheet language) and JavaScript (scripting language). Although a site can be created with only front-end programming, if one wants to collect data such as payment methods, survey results, and any other types of user input, back-end programming is needed. Back-end programming is the side of the website that works with servers, and stores input from users who access the website. Back-end work requires programming languages such as Java, C++, Python, etc.</p>
+		</div>
+		
+		<!-- Description of what we did in this unit, and the parts of the Codecademy lessons -->
+		<h2>What We Did in This Unit</h2>
+		
+		<div class="ind">
+			<p>In this unit, we were responsible to use an online program called CodeCademy, and learn HTML and CSS through the online lessons. We had 3 units we had to complete:</p>
+		</div>
+		
+		<!-- Web Dev Image -->
+		<img width="507px" height="354px" src="Images/web_dev.png" alt="Image not available" style="float:right;">
+	
+		<!-- List of Code Cademy Lessons -->
+		<ul class="smltxt">
+			<li>Learn HTML</li>
+				<ul class="smlrtxt">
+					<li>Elements and Structure</li>
+					<li>Tables</li>
+				</ul>
+			<li>Learn CSS</li>
+				<ul class="smlrtxt">
+					<li>Selectors and Visual Rules</li>
+					<li>The Box Model</li>
+					<li>Display and Positioning</li>
+					<li>Colors</li>
+					<li>Typography</li>
+					<li>Grid</li>
+				</ul>
+			<li>Learn Color Design</li>
+				<ul class="smlrtxt">
+					<li>Learn Color Theory</li>
+					<li>Learn Color for UI</li>
+				</ul>
+		</ul>
+		
+		<!-- Web Dev Podcast with link to the creator's site-->
+		<h2>Web Dev Podcast: Part 1</h2>
+		
+		<audio controls>
+			<source src="Audio/web_dev_podcast.mp3" type="audio/mpeg">
+		</audio>
+		<br>
+			<div class="smltxt">
+				<p>Check out the <a href="https://www.youtube.com/channel/UCshZ3rdoCLjDYuTR_RBubzw" target="_blank">Creator</a> of the Video</p>
+			</div>
+		<br>
+		
+		<!-- Table of HTML tags used-->
+		<h2>HTML Tags and CSS Properties Used in the Making of This Site</h2>
+		
+		<table class="smltxt">
+			<thead>
+				<th>Tag</th>
+				<th>What it does (note that some tags need to be started and ended)</th>
+				<th>Type</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="23">HTML Tags</td>
+					<td>!DOCTYPE html</td>
+					<td>Specifies language being used</td>
+				</tr>
+				<tr>
+					<td>html</td>
+					<td>Defines document</td>
+				</tr>
+				<tr>
+					<td>head</td>
+					<td>Starts off head element</td>
+				</tr>
+				<tr>
+					<td>body</td>
+					<td>Starts off body element (what is displayed)</td>
+				</tr>
+				<tr>
+					<td>title</td>
+					<td>Gives title to tab</td>
+				</tr>
+				<tr>
+					<td>link</td>
+					<td>Defines extarnal resource (stylesheet)</td>
+				</tr>
+				<tr>
+					<td>style</td>
+					<td>Starts internal CSS</td>
+				</tr>
+				<tr>
+					<td>h1, h2, h3, h4</td>
+					<td>Defines heading type</td>
+				</tr>
+				<tr>
+					<td>p</td>
+					<td>Defines paragraph</td>
+				</tr>
+				<tr>
+					<td>br</td>
+					<td>Makes a line break</td>
+				</tr>
+				<tr>
+					<td>!-- writing goes here --</td>
+					<td>Makes a comment</td>
+				</tr>
+				<tr>
+					<td>nav</td>
+					<td>Defines navigation links</td>
+				</tr>
+				<tr>
+					<td>div</td>
+					<td>Defines a section</td>
+				</tr>
+				<tr>
+					<td>a</td>
+					<td>Adding hyperlinks</td>
+				</tr>
+				<tr>
+					<td>ul</td>
+					<td>Defines a unordered list (with bullets)</td>
+				</tr>
+				<tr>
+					<td>ol</td>
+					<td>Defines a ordered list (with numbers)</td>
+				</tr>
+				<tr>
+					<td>li</td>
+					<td>Defines list items</td>
+				</tr>
+				<tr>
+					<td>table</td>
+					<td>Defines a table</td>
+				</tr>
+				<tr>
+					<td>thead</td>
+					<td>Defines a table head</td>
+				</tr>
+				<tr>
+					<td>tbody</td>
+					<td>Defines the body of a table</td>
+				</tr>
+				<tr>
+					<td>th</td>
+					<td>Defines a table head item</td>
+				</tr>
+				<tr>
+					<td>tr</td>
+					<td>Defines a table row</td>
+				</tr>
+				<tr>
+					<td>td</td>
+					<td>Defines a cell's data</td>
+				</tr>
+				<tr>
+					<td rowspan="22">CSS Properties</td>
+					<td>color</td>
+					<td>Changes color of text</td>
+				</tr>
+				<tr>
+					<td>background</td>
+					<td>Changes background image/color</td>
+				</tr>
+				<tr>
+					<td>border</td>
+					<td>Gives border to area</td>
+				</tr>
+				<tr>
+					<td>padding</td>
+					<td>Gives padding to an object so it can have some space around it</td>
+				</tr>
+				<tr>
+					<td>margin (right,left,top,bottom,all)</td>
+					<td>Helps in restricting objects within an area and positioning them</td>
+				</tr>
+				<tr>
+					<td>border-radius</td>
+					<td>Curves edges of a border</td>
+				</tr>
+				<tr>
+					<td>font-size</td>
+					<td>Changes font size</td>
+				</tr>
+				<tr>
+					<td>font-family</td>
+					<td>Changes font family</td>
+				</tr>
+				<tr>
+					<td>border-collapse</td>
+					<td>In the case of adding borders to a table, each cell in bordered, and makes this ugly double lined border; to get rid of this, we collapse the borders together to make it one unified line.</td>
+				</tr>
+				<tr>
+					<td>float</td>
+					<td>Positions text on a page</td>
+				</tr>
+				<tr>
+					<td>text-align</td>
+					<td>Aligns text</td>
+				</tr>
+				<tr>
+					<td>text decoration</td>
+					<td>Adds lines to text: over, under or through </td>
+				</tr>
+				<tr>
+					<td>width</td>
+					<td>Changes width of boders, boxes or text</td>
+				</tr>
+				<tr>
+					<td>float</td>
+					<td>Positions text on a page</td>
+				</tr>
+				<tr>
+					<td>text-indent</td>
+					<td>Indents text</td>
+				</tr>
+				<tr>
+					<td>position</td>
+					<td>Positions objects (they can stay fixed in your view even as you scroll or stay in one spot)</td>
+				</tr>
+				<tr>
+					<td>display</td>
+					<td>Specifies display type</td>
+				</tr>
+				<tr>
+					<td>overflow</td>
+					<td>Tells browser what to do if text is spilling over another object</td>
+				</tr>
+				<tr>
+					<td>z-index</td>
+					<td>Specifies where the object would be in a stack (if it is over an object with a higherz-index than it'self, it will be hidden under it)</td>
+				</tr>
+				<tr>
+					<td>top</td>
+					<td>gives vertical positioning of an object</td>
+				</tr>
+				<tr>
+					<td>box-sizing</td>
+					<td>Tells program how width and height are calculated</td>
+				</tr>
+				<tr>
+					<td>resize</td>
+					<td>Defines how an element is re-sizable by a user</td>
+				</tr>
+				<tr>
+					<td rowspan="19">HTML Attributes</td>
+					<td>class</td>
+					<td>Calls a class</td>
+				</tr>
+				<tr>
+					<td>id</td>
+					<td>Calls an id</td>
+				</tr>
+				<tr>
+					<td>href</td>
+					<td>Meant for hyperlinks</td>
+				</tr>
+				<tr>
+					<td>src</td>
+					<td>Specifies URL (images, videos, audio, etc.)</td>
+				</tr>
+				<tr>
+					<td>type</td>
+					<td>Identifies type of file</td>
+				</tr>
+				<tr>
+					<td>alt</td>
+					<td>Alternate text if what you want is not displayed</td>
+				</tr>
+				<tr>
+					<td>colspan</td>
+					<td>Specifies the number of columns a table cell will take up</td>
+				</tr>
+				<tr>
+					<td>rowspan</td>
+					<td>Specifies the number of rows a table cell will take up</td>
+				</tr>
+				<tr>
+					<td>rel</td>
+					<td>Describes relationship of current and linked document</td>
+				</tr>
+				<tr>
+					<td>style</td>
+					<td>in-line CSS</td>
+				</tr>
+				<tr>
+					<td>target</td>
+					<td>Specifies where to open link (ex: new tab)</td>
+				</tr>
+				<tr>
+					<td>for</td>
+					<td>Specifies which element of a form is bound to which label or calculation</td>
+				</tr>
+				<tr>
+					<td>width</td>
+					<td>Sets width for an object</td>
+				</tr>
+				<tr>
+					<td>height</td>
+					<td>Sets length for an object</td>
+				</tr>
+				<tr>
+					<td>action</td>
+					<td>Specifies where to send form data after the form is submitted</td>
+				</tr>
+				<tr>
+					<td>name</td>
+					<td>Specifies name of element</td>
+				</tr>
+				<tr>
+					<td>placeholder</td>
+					<td>Temporary text, usually for input sections of a form, informing a user of what to write in the field</td>
+				</tr>
+				<tr>
+					<td>value</td>
+					<td>Specifies value of element</td>
+				</tr>
+				<tr>
+					<td>frameborder</td>
+					<td>Specifies whether or not to display a border</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Thanks to <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a> for Definitions</h3>
+	</body>
+</html>

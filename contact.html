@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!-- 22 Vraj Patel: Website (Contact) -->
+
+
+<html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Contact </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Styling the feedback/question form */
+			input[type=text], textarea {
+				width: 50%;
+				padding: 12px;  
+				border: 1px solid #ccc;
+				border-radius: 4px; 
+				box-sizing: border-box; 
+				margin-top: 6px; 
+				margin-bottom: 26px; 
+				resize: vertical 
+			}
+
+			input[type=submit] {
+				background-color: #37a5f0;
+				color: white;
+				padding: 10px 10px;
+				border: 1px solid #37a5f0;
+				border-radius: 10px;
+				
+			}
+
+			
+			input[type=submit]:hover {
+				background-color: rgb(20,67,107);
+			}
+			
+			/* Changing the background */
+			body{
+				background: url(Images/mt1.jpg);
+			}
+		
+		</style>
+		
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+		
+		<!-- Navigation -->
+		<div id="nav">
+			<nav>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Units
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="html-css.html">Web Development</a>
+						<a href="basic_electronics.html">Basic Electronics</a>
+						<a href="javascript.html">JavaScript</a>
+						<a href="digital_electronics.html">Digital Electronics</a>
+                        <a href="culmanating_activity.html">Culminating Activity</a>
+					</div>
+				</div>
+				<a href="career.html">Career</a> 
+				<a style="color:rgb(20, 129, 252);">Contact</a> 
+				<a href="about.html">About</a> 
+				<a href="index.html">Home</a>    
+				<div id="webname">
+					<a>Patelium: The Official Webpage of Vraj Patel</a>
+				</div>
+			</nav>
+		</div>
+		
+		<script>
+			// DropDown Apprear and Disappear on Click
+			function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Disapear if Clicked outside of 
+			window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+				}
+			}
+			}
+		</script>
+
+		<!-- Putting the content in a section of it's own -->
+		<div id="body">
+		
+			<!-- Contact us section will provide information about the school -->
+			<h1>Contact Us</h1>
+			
+			<div style="float: right; margin-right:10px;">
+				<h2>Location</h2>
+					<h3>3675 Thomas Street, Mississauga, ON L5M7E6</h3>
+					<h3>Phone: 905-363-0289 Fax: 905-363-0293</h3>
+					<h3>My Email: <a href="mailto:593869@pdsb.net?Subject=Hi" target="_top">593869@pdsb.net</a></h3>
+					
+					
+			<!-- Map of the school (Will say it doesnt work properly because it's in developement mode) -->
+
+			<div id="googleMap" style="width:100%;height:400px;"></div>
+
+			<script>
+				function myMap() {
+					var mapProp= {
+						center:new google.maps.LatLng(43.556912, -79.743678),
+						zoom:15,
+					};
+					var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+				}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?AIzaSyCeq4r8IQwVbbGANfsSwVn_ywtFbvflzK8&callback=myMap"></script>
+			
+			</div>
+			
+			
+			
+		
+			<!-- Feedback/Question form -->
+			<h2>Feedback or Questions</h2>
+			
+			<div class="container">
+				<form action="contact_us.php">
+
+					<label id="blue" for="fname">First Name</label><br>
+						<input type="text" id="fname" name="firstname" placeholder="Enter first name here"><br>
+
+					<label id="blue" for="lname">Last Name</label><br>
+						<input type="text" id="lname" name="lastname" placeholder="Enter last name here"><br>
+						
+					<label id="blue" for="subject">Subject</label><br>
+						<textarea id="subject" name="subject" placeholder="This form will have no impact for it is not routed to a server, because I don't know how to do backend programming. It is only here for looks and to show my front end skills." style="height:350px"></textarea>
+						<br>
+
+					<!-- Windows Alert and Submition -->	
+					<button onclick="Thanks()" style="color:#37a5f0">Submit</button>
+
+					<script>
+					function Thanks() {
+					alert("Click Ok to proceed");
+					}
+					</script>
+
+				</form>
+			</div> 
+		
+		<h2>Follow SLSS on:</h2>
+		<a href="https://twitter.com/SLSSPeel" target="./blank">
+			<img src="./Images/twit.png" alt="Twitter" height="50" width="50">
+		</a>
+		<a href="https://www.facebook.com/pages/category/Harmonized-Page/Stephen-Lewis-Secondary-School-SLSS-942209782557402/" target="./blank">
+			<img src="./Images/face.png" alt="Facebook" height="50" width="50">
+		</a>
+		<a href="https://www.instagram.com/explore/locations/235977321/stephen-lewis-secondary-school/?hl=en" target="./blank">
+			<img src="./Images/insta.png" alt="Instagram" height="50" width="50">
+		</a>
+		</div>
+	</body>
+</html>

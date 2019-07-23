@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<!-- 22 Vraj Patel: Website (Career) -->
+
+
+<html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Career </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(./Images/mt3.jpg);
+			}
+		
+		</style>
+		
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+	
+		<!-- Navigation -->
+		<div id="nav">
+			<nav>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Units
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="html-css.html">Web Development</a>
+						<a href="basic_electronics.html">Basic Electronics</a>
+						<a href="javascript.html">JavaScript</a>
+						<a href="digital_electronics.html">Digital Electronics</a>
+                        <a href="culmanating_activity.html">Culminating Activity</a>
+					</div>
+				</div>
+				<a style="color:rgb(20, 129, 252);">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a href="about.html">About</a> 
+				<a href="index.html">Home</a>    
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+		</div>
+		
+		<script>
+			// DropDown Apprear and Disappear on Click
+			function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Disapear if Clicked outside of 
+			window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+				}
+			}
+			}
+		</script>
+
+
+		<!-- Content Begins -->
+		<div id="body">
+		
+		<h1>Career</h1>
+		
+		<!-- My career ambitions -->
+		<h2>What I Want to Do</h2>
+			<div class="ind">
+				<p>As stated in the about me section, I am very interested in the field of robotics, and am passionate to pursue a career in this field. To do so, I will have to gain knowledge of how different parts of a machine communicate with each other and of how programs are made and executed in a robot.</p>
+			</div>
+		
+		<!-- Careers per unit -->
+		<h2>Jobs in Computer Engineering</h2>
+			<p>The following are jobs associated to each unit in this course.</p>
+			<p>*What I want to do</p>
+			<table class="smltxt">
+				<thead>
+					<th>Units</th>
+					<th>Jobs</th>
+					<th>Descriptions</th>
+					<!-- Salaries were taken from indeed.coom-->
+					<th>Average Salaries <br>(indeed.com)</th>
+				<thead>
+				<tbody>
+					<tr>
+						<td>Web Development</td>
+						<td>Web Developer</td>
+						<td>Web Developers design the front end and/or back end of a web page and/or application.</td>
+						<td>$58,834</td>
+					</tr>
+					<tr>
+						<td>Basic Electronics</td>
+						<!-- Hardware engineers are part of both basic and digital electronics, so this section will take up two units -->
+						<td rowspan="2">Hardware Engineer</td>
+						<td rowspan="2">Hardware Engineers design circuits and build various electronics such as the mother boards of a computer, internals of a speaker, and much more.</td>
+						<td rowspan="2">$68,902</td>
+					</tr>
+					<tr>
+						<td>Digital Electronics</td>
+					</tr>
+					<tr>
+						<!-- Programming and Interfacing go hand in hand, so they are one section -->
+						<!-- Since there are alot of careers in this field, I added 3 -->
+						<td rowspan="3">Programming/Interfacing</td>
+						<td>*Robotics Engineer</td>
+						<td>Brainstorm, design, and construct automated machines. This role includes knowledge in wiring, mechanics and programing of a robot.</td>
+						<td>$63,620</td>
+					</tr>
+					<tr>
+						<td>Programmer</td>
+						<td>Programmers program and troubleshoot various programs in various programming languages. They are to work closely with software engineers to meet a client's needs.</td>
+						<td>$25.22/hour</td>
+					</tr>
+					<tr>
+						<td>Software Engineer</td>
+						<td>Software Engineers work with clients to plan what they want, and send information to programmer to execute.</td>
+						<td>$74, 389</td>
+					</tr>
+					<tr>
+						<td>TECSS</td>
+						<td>Human Resources Manager</td>
+						<td>Hire, train and manage employees. This job includes knowledge of current technology trends, careers, and workplace safety. HR is also occassionaly responsible for organizing enironmental and community initiatives to boost a company's reputation.</td>
+						<td>$75,257</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<!-- Video about careers in comp eng, and a link to the creator's site -->
+			<h2>Find Out More About Careers in Computer Engineering</h2>
+				<video width="520" height="315" controls>
+					<source src="Videos/comp_eng_careers.mp4" type="video/mp4">
+					Sorry, video is unavailable. :(
+				</video>
+			<div class="smltxt"><p>Check out the <a href="https://www.youtube.com/channel/UCpCSAcbqs-sjEVfk_hMfY9w" target="_blank">Creator</a> of the Video</p></div>
+		</div>
+	</body>
+</html>

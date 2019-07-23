@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Basic Electronics </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(./Images/mt6.jpg);
+			}
+    
+            
+		</style>
+		
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+	
+		<!-- Navigation Bar -->
+
+		<div id="nav">
+			<nav>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Units
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="html-css.html">Web Development</a>
+                        <a style="color:#37a5f0;">Basic Electronics</a>
+                        <a href="javascript.html">JavaScript</a>
+                    </div>
+                    </div>
+				<a href="career.html">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a href="about.html">About</a> 
+				<a href="index.html">Home</a>
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+		</div>
+		
+		<div id="body">
+            
+        <!--DropDown-->
+		<script>
+            // DropDown Apprear and Disappear on Click
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Disapear if Clicked outside of 
+            window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+            }
+        </script>
+
+
+		<!-- Main Heading -->
+        <h1>Basic Electronics</h1>
+        <p>Welcome to the Basic Electronics Unit. What follows is the content we learned in class</p>
+        <h2>Basic Electronics Presentation</h2>
+            <p>This presentation covers the topics of Series, Parallel and Combination circuits, how to solve them and laws related to solving circuits.</p>
+            <iframe src="https://onedrive.live.com/embed?resid=6294D64335C7BE1C%211621&amp;authkey=%21APlqhl1h3B37e9Y&amp;em=2&amp;wdAr=1.7777777777777776" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+        
+        <!--SI Prefixes-->
+        <h2>Math in Electronics</h2>
+        <h4>SI Prefixes</h4>
+            <table>
+
+                <thead>
+                <tr>
+                  <th>Power of 10</th>
+                  <th>Multiplier Name</th>
+                  <th>Symbol</th>
+                  <th>Multiply By</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                
+                <tr>
+                  <td>10<sup>12</sup></td>
+                  <td>tera</td>
+                  <td>T</td>
+                  <td>1 000 000 000 000</td>
+                </tr>
+                
+                <tr>
+                  <td>10<sup>9</sup></td>
+                  <td>giga</td>
+                  <td>G</td>
+                  <td>1 000 000 000</td>
+                </tr>
+                
+                <tr>
+                  <td>10<sup>6</sup></td>
+                  <td>mega</td>
+                  <td>M</td>
+                  <td>1 000 000</td>
+                </tr>
+                
+                <tr>
+                  <td>10<sup>3</sup></td>
+                  <td>kilo</td>
+                  <td>k</td>
+                  <td>1 000</td>
+                </tr>
+ 
+                <tr>
+                    <td>10<sup>0</sup></td>
+                    <td>Basic Unit</td>
+                    <td>No multiplier</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                  <td>10<sup>-3</sup></td>
+                  <td>milli</td>
+                  <td>m</td>
+                  <td> 0.001</td>
+                </tr>
+                
+                <tr>
+                  <td>10<sup>-6</sup></td>
+                  <td>micro</td>
+                  <td>µ</td>
+                  <td>0.000 001</td>
+                </tr>
+                
+                <tr>
+                  <td>10<sup>-9</sup></td>
+                  <td>nano</td>
+                  <td>n</td>
+                  <td>0.000 000 001</td>
+                </tr>
+                
+                <tr>
+                  <td>10<sup>-12</sup></td>
+                  <td>pico</td>
+                  <td>p</td>
+                  <td>0.000 000 000 001</td>
+                </tr>
+                
+                </tbody>
+
+            </table>
+        
+        <!--Engineering Notation, Rules and Units-->
+        <h4>Engineering Notation</h4>
+
+        <p>Scientific notation is the expression of a number n in the form a×10<sup>p</sup>, where p is a multiple of 3 and a is between 999 and 1. The decimals are usually rounded to the nearest hundreths column. 
+
+        <h3>Examples:</h3> 
+        <p>2350 = 2.35 x 10 <sup>3</sup>
+        <br>0.0322 = 3.22 x 10 <sup>-3</sup>
+        <br>354332.323 = 35.43 x 10 <sup>6</sup> (extra digits are rounded)
+        </p>
+        
+        <h4>Engineering Notaion vs Scientific Notation</h4>
+        <p>In electronics and engineering in general, we use what is called the Engineering Notation (as mentioned above). It is a way of writing a number that is commonly confused for Scientific Notation. The difference is, in a×10<sup>p</sup> for Engineering Notation, p is a multiple of 3 and a is between 999.99 and 1. In Scientific Notation however, (a×10<sup>p</sup>) p can be any number but a has to be between 9.99... and 1.
+        </p><h3>Examples:</h3> 
+        <p>Engineering:
+            <br>0.0323 = 32.40 x 10 <sup>-3</sup>
+            <br>235000000 = 235.00 x 10 <sup>6</sup>
+        <br><br>Scientific:
+            <br>0.0323 = 3.23 x 10 <sup>-2</sup>
+            <br>235000000 = 2.35 x 10 <sup>8</sup>
+        </p>
+
+
+        <h4>Significant Figures Rules</h4>
+        <list>
+            <li>1. Nonzero numbers (the digits 1 through 9) are always significant figures.</li>
+            <li>2. A zero used as a place holder between two nonzero digits is considered a significant figure.</li>
+            <li>3. A zero to the right of the last digit of a decimal is considered a significant figure.</li>
+            <li>4. A zero used only as a place holder, either on the right or the lest of the decimal poin, if it is not between two nonzero digits, is not &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;considered a significant figure.</li>
+            <li>5. When a number is greater than one, a decimal point can be placed following the number to show that all the digits are significant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;including the zeros.</li>
+        </list>
+
+        <h4>Units for Electronics</h4>
+        <table>
+            <thead>
+                <th>Electrical Parameter</th>
+                <th>Measuring Unit</th>
+                <th>Symbol</th>
+                <th>Unit</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Voltage</td>
+                    <td>Volts</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>Current</td>
+                    <td>Amps</td>
+                    <td>I</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Resistance</td>
+                    <td>Ohms</td>
+                    <td>R</td>
+                    <td>Ω</td>
+                </tr>
+                <tr>
+                    <td>Conductance</td>
+                    <td>Siemen(mho)</td>
+                    <td>G</td>
+                    <td>℧</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Electronic Devices -->
+        <h2>Breadboards</h2>
+            <p>Breadboards are plastic blocks with a network of inter-connected holes where you would plug in wires to form circuits. the two most upper and lower lines of a bread board are called power termials. Each horizontal line on a power terminal is connected. On the middle of the breadboard, we have the terminal strip. Each vertical line the terminal strips are connected(5 holes), with a break at the center divider. </p>
+            <img width="507px" height="354px" src="./Images/brbo.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/brbocon.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/brbocircuit.jpg" alt="Image not available" >
+
+        <h2>Resistors</h2>
+            <p>Resistor are clay cilinders that reduce the voltage/current in a circuit, making it suitable for a high power source to power a load (lightbulb, toaster, etc.) with a low power tolerance. Resistors come in many difference sizes based on the amount of inpurities there are. To find out how powerful your resistor is, you can use the guide below.</p>
+            <img width="507px" height="676px" src="./Images/resistor.png" alt="Image not available" ><br>
+            <img src="./Images/resistor1.png" alt="Image not available" >
+            <p>Resistor above has 4 bands. Red, Red, Brown and Gold
+                <br>1st band = Red = 2
+                <br>2nd band = Red = 2
+                <br>Multiplier = Brown = 10
+                <br>Tolerance = Gold = ±5% (Tolerance is the fluctuation in the resistance of the resistor. The lower the tolerance, the more expensive the resistor.)
+                <br>
+                <br>1st and 2nd band are not added, 1st band represents tens column while 2nd band represents ones column.
+                <br>
+                <br>22*10=220
+                <br>220 ± 5% = 209Ω-231Ω
+            </p>
+            <img width="507px" height="354px" src="./Images/2.jpg" alt="Image not available" >
+
+        <h2>Multimeters</h2>
+            <p>To find out how to use a multimeter, follow the image below.</p>
+            <img width="507px" height="600" src="./Images/DMM.png" alt="Image not available" >
+
+        <!--Photos-->
+        <h2>Photo Gallery</h2>
+            <p>Some pics of the work we did in class in this unit.</p>
+
+            <img width="507px" height="354px" src="./Images/0.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/1.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/3.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/4.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/5.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/7.jpg" alt="Image not available" >
+            <img width="507px" height="354px" src="./Images/8.jpg" alt="Image not available" >
+
+		</div>
+	</body>
+</html>

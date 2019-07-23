@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Basic Electronics </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(./Images/mt8.jpg);
+			}
+    
+            
+		</style>
+		
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+	
+		<!-- Navigation Bar -->
+
+		<div id="nav">
+			<nav>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Units
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="html-css.html">Web Development</a>
+                        <a href="basic_electronics.html">Basic Electronics</a>
+                        <a href="javascript.html">JavaScript</a>
+                        <a href="digital_electronics.html">Digital Electronics</a>
+                        <a style="color:rgb(20, 129, 252);">Culminating Activity</a>
+                    </div>
+                    </div>
+				<a href="career.html">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a href="about.html">About</a> 
+				<a href="index.html">Home</a>
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+		</div>
+        
+        <!--DropDown-->
+		<script>
+            // DropDown Apprear and Disappear on Click
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Disapear if Clicked outside of 
+            window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+                }
+            }
+            }
+        </script>
+    
+        <div id="body">
+        <h1>Culminating</h1>
+        <p>For our culminating, we were given a problem where a farmer had to get a Fox, Goat and a Cabbage across a river (further details in the picture).</p>
+        <img width="627px" height="761px" src="./Images/RiverCrossing.png" alt="Image not available" >    
+        <img width="784px" height="435px" src="./Images/RiverCrossingGates.png" alt="Image not available" >    
+    </body>

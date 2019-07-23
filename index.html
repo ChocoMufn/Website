@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!-- 22 Vraj Patel: Website (Index) -->
+
+
+<html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : Home </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(./Images/mt2.jpg);
+			}
+			
+		</style>
+			
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+			
+	</head>
+	<body>
+
+		<!-- Navigates to diffrerent sites -->
+		<div id="nav">
+			<nav>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Units
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="html-css.html">Web Development</a>
+						<a href="basic_electronics.html">Basic Electronics</a>
+						<a href="javascript.html">JavaScript</a>
+						<a href="digital_electronics.html">Digital Electronics</a>
+                        <a href="culmanating_activity.html">Culminating Activity</a>
+					</div>
+				</div>
+				<a href="career.html">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a href="about.html">About</a> 
+				<a style="color:rgb(20, 129, 252);">Home</a>    
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+		</div>
+		
+		<script>
+			// DropDown Apprear and Disappear on Click
+			function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Disapear if Clicked outside of 
+			window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+				}
+			}
+			}
+		</script>
+
+
+		<div id="body">
+		
+		<!-- Webpage heading -->
+		<h1>About TEJ:Computer Engineering<h1>
+
+		<!-- Description of the course -->
+		<h2>Course Description</h2>
+		
+		<div class="ind">
+			<p>This course examines computer systems and control of external devices. Students will develop
+			knowledge and skills in <br> electronics, interfacing, programming, and networks, will build systems that
+			use computer programs and interfaces to <br> control and respond to external devices. Students will
+			develop an awareness of related environmental and societal issues,<br> and will learn about college and
+			university programs leading to careers in computer technology.</p>
+		</div>
+		
+		<!-- Units covered -->
+		<h2>Unit</h2>
+		<ul class="smltxt">
+			<li>Web Development</li>
+			<li>Basic Electronics</li>
+			<li>Programming</li>
+			<li>Digital Electronics</li>
+			<li>Interfacing</li>
+			<li>TECSS</li>
+			<ul class="smlrtxt">
+				<li><strong>T</strong>echnology <strong>E</strong>nvironment <strong>C</strong>areers <strong>S</strong>afety <strong>S</strong>ociety</li>
+			</ul>
+			<li>Final</li>
+			<ul class="smlrtxt">
+				<li>E-Portfolio</li>
+				<li>Culminating Activity</li>
+				<li>Exam</li>
+			</ul>
+		</ul>
+		
+		<!-- Video of what comp eng is all about and a link to the creator's site-->
+		<h2>What is Computer Engineering<h2>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/avZTQgLs064" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+		<div class="smltxt">
+			<p>Check out the <a href="https://www.youtube.com/channel/UCpCSAcbqs-sjEVfk_hMfY9w" target="_blank">Creator</a> of the Video</p>
+		</div>
+		
+		<!-- Table of how the marks will be divided -->
+		<h2>Mark Allocation Table</h2>
+		
+		<table class="smltxt">
+			<thead>
+				<th>Communication
+				<br>14%</th>
+				<th>Knowledge and Understanding
+				<br>14%</th>
+				<th>Thinking
+				<br>14%</th>
+				<th>Application
+				<br>28%</th>
+				<th>Culminating Activity & 
+				<br> Final Exam (20%)+
+				<br> e-Portfolio (10%)</th>
+			</thead>
+			<tbody >
+				<!-- I made the paddinx higher than the td padding set in style.css for aesthetic purposes -->
+				<td style="padding:10px;"> 
+					The conveying of meaning through various forms as follows:
+					<ul>
+						<li>Oral (discussion, presentations)</li>
+						<li>Written (design briefs technical reports)</li>
+						<li>Visual (schematics, flow charts, graphics)</li>
+					</ul>
+				</td>
+				<td style="padding:10px;">
+					Knowledge and understanding of:
+					<ul>
+						<li>Each course unit</li>
+						<li>Terminology used</li>
+						<li>Princicles</li>
+						<li>Concepts</li>
+						<li>Comprehension<br>of its meaning and significance in <br>Computer Engineering</li>
+					</ul>
+				</td>
+				<td style="padding:10px;">
+					The use of critical and creative thinking skills and processes as follows:
+					<ul>
+						<li>Problem-Solving Skills</li>
+						<li>Analyse/Evaluation Skills</li>
+						<li>Design Skills</li>
+						<li>Decision-Making Process</li>
+					</ul>
+				</td>
+				<td style="padding:10px;">
+					The use of knowledge and skills to make connections within and between various contexts.
+				</td>
+				<td style="padding:10px;">
+				End of semester individual activity will cover all four categories and include the following:	
+				<ul>
+						<li>Final Project : In Class</li>
+						<li>Final Exam : In Class</li>
+						<li>E-Portfolio : Finalized</li>
+						
+					</ul>
+				</td>
+			</tbody>
+		</table>
+		</div>
+	</body>
+</html>

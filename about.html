@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<!-- 22 Vraj Patel: Website (About Me) -->
+
+
+<html>
+	<head>
+		<!-- Adding the title -->
+		<title> Vraj's Site : About </title>
+		
+		<!-- Linking the stylesheet -->
+		<link !important rel="stylesheet" href="./CSS/style.css" type="text/css" >
+		
+		<!-- Internal CSS -->
+		<style>
+		
+			/* Changing the background */
+			body{
+				background: url(./Images/mt4.jpg);
+			}
+		
+		</style>
+		
+		<link rel="shortcut icon" type="image/png" href="Images/logo.png">
+		
+	</head>
+	<body>
+	
+		<!-- Navigation Bar -->
+
+		<div id="nav">
+			<nav>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()">Units
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="html-css.html">Web Development</a>
+						<a href="basic_electronics.html">Basic Electronics</a>
+						<a href="javascript.html">JavaScript</a>
+						<a href="digital_electronics.html">Digital Electronics</a>
+                        <a href="culmanating_activity.html">Culminating Activity</a>
+					</div>
+				</div>
+				<a href="career.html">Career</a> 
+				<a href="contact.html">Contact</a> 
+				<a style="color:rgb(20, 129, 252);">About</a> 
+				<a href="index.html">Home</a>    
+				<div id="webname"><a>Patelium: The Official Webpage of Vraj Patel</a></div>
+			</nav>
+		</div>
+		
+		<div id="body">
+		
+		<!--DropDown-->
+		<script>
+			// DropDown Apprear and Disappear on Click
+			function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Disapear if Clicked outside of 
+			window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+				}
+			}
+			}
+		</script>
+
+
+		<!-- Main Heading -->
+		<h1>About Me</h1>
+		
+			<!-- Basic Facts About Me -->
+			<h3>Name: Vraj Patel</h3>
+			<h3>Age: 16</h3>
+			<h3>Birthday: September 26, 2002 in New Jersey, United States</h3>
+			<h3>Ethnicity: IndoAmerican (Gujarati)</h3>
+			<h3>Grade: 11</h3>
+		
+		<!-- My Personal Life -->
+		<h2>Personal Life</h2>
+			<div id="ind">
+				<p>
+				I have a huge family including my little sister, mom, dad, 3 direct uncles, 3 direct aunts, grandfather and grandmother, and countless other family mebers who say they know me, een though I don't remember them.
+				</p>
+			</div>
+		
+		<!-- My Hobbies -->
+		<h2>Hobbies</h2>
+			<div id="ind">
+				<p>
+				My hobbies include designing, building, wiring and programming robots and other microcontroller decives. Another one of my hobbies include playing competitive and casual badminton. Furthermore, I also enjoy biking, hiking, swimming, woodworking, researching, experimenting, and kayaking. 
+				</p>
+			</div>
+		
+		<!-- The Places I've Traveled -->
+		<h2>Places I've Lived/Traveled</h2>
+			
+			<!-- Instead of listing the places i've visited, I included pictures of the flags with links to the associated wiki page -->
+		
+			<a href="https://en.wikipedia.org/wiki/Canada" target="./blank">
+				<img src="./Images/canada.png" alt="Cananda" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/United_States" target="./blank">
+				<img src="./Images/usa.png" alt="United States of America" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/India" target="./blank">
+				<img src="./Images/india.png" alt="India" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/China" target="./blank">
+				<img src="./Images/china.jpg" alt="China" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/England" target="./blank">
+				<img src="./Images/england.png" alt="England" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/France" target="./blank">
+				<img src="./Images/france.png" alt="France" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/Singapore" target="./blank">
+				<img src="./Images/singapore.png" alt="Singapore" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/United_Arab_Emirates" target="./blank">
+				<img src="./Images/uae.png" alt="United Arab Emirates" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/Italy" target="./blank">
+				<img src="./Images/italy.png" alt="Italy" height="150" width="300">
+			</a>
+			
+			<a href="https://en.wikipedia.org/wiki/Dominican_Republic" target="./blank">
+				<img src="./Images/domrep.jpg" alt="Dominican Republic" height="150" width="300">
+			</a>
+		
+		<!-- My Favorite Things -->
+		<h2>Favorites</h2>
+			<div id="ind">
+				<list>
+					<li>Favorite color is teal</li>
+					<li>Favorite food is a burrito</li>
+					<li>Favorite video game is Skyrim</li>
+					<li>Favorite movie is Ready Player One</li>
+					<li>Favorite sport is Badminton</li>
+					<li>Favorite animal is a Japanese Dwarf Flying Squirrel</li>
+					<li>Favorite subject is Mathematics</li>
+					<li>Favorite inventor is Nikola Tesla</li>
+					<li>Favorite board game is the original Monopoly</li>
+					<li>Favorite book is The Secrets of the Millionaire Mind</li>
+				</list
+			</div>
+		
+		<!-- Things I'm Interested In -->
+		<h2>Interests</h2>
+			<div id="ind">
+				<p>
+				I am interested in learning new concepts in the STEM field. I am also interested in joining clubs and networking with people that have similar intellect and personalities as me. One of the other things that interest me, is Robotics. I always loved the idea of an autonomous machine that works with other autonomous machines to complete a task. Therefore, this is the field I want to go into in the future.
+				</p>
+			</div>
+		
+		<!-- Schools I Have Studied In -->
+		<h2>Schools I've Studied In</h2>
+		
+		<table>
+			<thead>
+				<th>School</th>
+				<th>Grades</th>
+				<th>Country</th>
+				<th>Type</td>
+				<th>Cost/Year</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Kid-Z</td>
+					<td>Pre-School</td>
+					<td>India, Bangalore</td>
+					<td>Private</td>
+					<td>$600</td>
+				</tr>
+				<tr>
+					<td>Corsair Public School</td>
+					<td>Pre-School - Grade 2</td>
+					<td>Canada, Mississauga</td>
+					<td>Public</td>
+					<td>Free</td>
+				</tr>
+				<tr>
+					<td>Shanghai American School</td>
+					<td>Grade 3 - Grade 4</td>
+					<td>China, Shanghai</td>
+					<td>Private</td>
+					<td>$30,000</td>
+				</tr>
+				<tr>
+					<td>Churchill Meadows Public School</td>
+					<td>Grade 5</td>
+					<td>Canada, Mississauga</td>
+					<td>Public</td>
+					<td>Free</td>
+				</tr>
+				<tr>
+					<td>Ruth Thompson Public School</td>
+					<td>Grade 6 - Grade 8</td>
+					<td>Canada, Mississauga</td>
+					<td>Public</td>
+					<td>Free</td>
+				</tr>
+				<tr>
+					<td>Stephen Lewis Secondary School</td>
+					<td>Grade 9 - Current</td>
+					<td>Canada, Mississauga</td>
+					<td>Public</td>
+					<td>Free</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>Videos I Made</h2>
+		<div class="ind">
+			<p>This is a commercial video I made in grade 10 business. The product this commercial was made for was a chip that is installed in the hippocampus (part of brain in charge of memory), and helps you remember things better by downloading information into your brain via a phone app. Of course, this product is one I made up, but it's a good commercial none the less.</p>
+		</div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/PRITM3JBzTY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<br>
+		
+		<div class="ind">
+			<p>A small introduction video about me!</p>
+		</div>
+		<video width="520" height="315" controls>
+				<source src="Videos/aboutVraj.mp4" type="video/mp4">
+				Sorry, video is unavailable. :(
+		</video>
+		
+	</body>
+</html>
